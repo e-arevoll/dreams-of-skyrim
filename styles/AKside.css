@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Border for "drømmebobblene".*/
+}
+
+body {
+    background-image: url('../images/snowbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    width: 95vw;
+    height: 90vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "skyrimFont";
+    opacity: 80%;
+}
+
+h3 {
+    font-family: "skyrimFont";
+    opacity: 80%;
+}
+
+p {
+    font-family: "skyrimFont";
+    opacity: 80%;
+}
+
+.highelf {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 500px;
+    border: 5px solid black;
+    left: 50px;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.karakterinfo {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    border: 5px solid black;
+    top: 150px;
+    left: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+span {
+    font-family: "skyrimFont";
+    opacity: 80%;
+}
+
+.highelf img {
+    margin: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: auto;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background-color: black;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card*/
+.center {
+    margin-right: 20%;
+}
+
+@font-face {
+    font-family: "skyrimFont";
+    src: url("../styles/balgruf.woff");
+}
+
+a {
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    height: 40px;
+    padding: 20px;
+    left: 160px;
+    top: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

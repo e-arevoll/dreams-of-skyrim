@@ -1,0 +1,68 @@
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.heading {
+  color: aliceblue;
+  font-size: 3vh;
+  text-align: center;
+  line-height: 30vh;
+  font-family: "skyrimFont";
+  opacity: 80%;
+  animation-name: pulsHeading;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.avatarer {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 2px solid rgb(72, 65, 54);
+}
+
+iframe {
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+}
+
+a {
+  color: aliceblue;
+}
+
+@font-face {
+  font-family: "skyrimFont";
+  src: url("balgruf.woff");
+}
+
+.zoomAvatar {
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.zoomAvatar:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulsHeading {
+  0%{font-size: 3vh;}
+  50%{ font-size: 3.5vh;}
+  100% {font-size: 3vh;}
+  
+}
+

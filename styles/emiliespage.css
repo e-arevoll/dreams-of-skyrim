@@ -1,0 +1,153 @@
+body{
+    background-image: url('../images/skog.png');
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; /*forebygger horisontal scroll-bar*/
+}
+/*Legger inn tre rader nedover etter flexboxmodellen og flytter mesteparten av disse på høyre side av nettsiden.
+Kilde https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+.firstRow {
+    display: flex; /* gjør elementet fleksibelt.*/
+    flex-direction: row-reverse; /* sørger for at elementene ligger på rad i omvendt rekkefølge */
+    justify-content: space-between; /* sørger for jevnt mellomrom mellom elementene.*/
+    margin-right: 10vw; /* lager en margin på høyre side slik at verdien til denne gjør at elementet flyttes mot venstre.*/
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    margin-right: 15vw;
+
+}
+
+.thirdRow {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    justify-content: space-between;
+    margin-right: 20vw; 
+}
+
+
+.elenwenDescription { 
+    width: 20vh;
+    height: 28vh;
+    border-radius: 50%;
+    padding: 40px;
+    border: 2px solid rgba(4, 57, 4, 0.645);
+    background-color: rgba(5, 84, 5, 0.508);
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.elenwenDescription:hover { 
+    width: 22vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 3px solid rgb(4, 57, 4, 0.645);
+    background-color: rgba(5, 84, 5, 0.74);
+}
+
+/*Bruke transition for å animere slik at det kommer opp bilde når man kommer til nettsiden, men
+når musepekeren føres over bildet vil det "flippe" horisontalt slik at en tekst komme frem.
+Det har blitt burkt samme klasse (imageFlip) for alle tre bilder.*/
+.imageFlip {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+.imageFlip:hover {
+    transform: rotateY(180deg);
+}
+
+/*Her er de tre bildene med tilhørende tekst"boks"*/
+
+.elenwenImage {
+    width: 37vh;
+    height: 45vh;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.characterText {
+    width: 37vh;
+    height: 45vh;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(5, 84, 5, 0);
+    color: black;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.collegeImage {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.jobText {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(97, 99, 97, 0.178);
+    color: rgb(19, 16, 16);
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.dreamImage {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.dreamText {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(5, 84, 5, 0);
+    color: white;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*styling for link til hovedside*/
+
+a {
+    background-color:rgba(5, 84, 5, 0.514);
+    border: 2px solid rgba(5, 84, 5, 0.688);
+    border-radius: 5px;
+    color: rgb(28, 119, 28);
+    padding: 15px 32px;
+    text-align: center;
+    height:25px;
+    width: 55px;
+    align-items: flex-end;
+}
