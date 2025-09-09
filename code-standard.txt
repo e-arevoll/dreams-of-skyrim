@@ -1,0 +1,26 @@
+Cmnd/alt + SHIT + F for å formattere koden.
+Bruk av tab-knappen ved indentering.
+Camel Casing(?) til bruk ved navngiving av klasser og id.
+Alt skal kodes på engelsk
+Organisering: Styles-folder til .css-filer og Images-folder til bilder.
+Forsiden kalles index.html
+Våre “egne” sider kalles eirinsPage.html etc.
+Alle seksjonene til nettsiden er pakket inni <div> tag. 
+
+Hvordan dette skal deles: 
+
+Layout til fremsiden:
+-	Bakgrunnsbilde
+-	Tittel på nettsiden eks. “Welcome to the dream world of Skyrim”
+-	Knapp til personsidene
+-	Spotify musikk knapp
+
+Layout for egne personsider:
+-	Bakgrunnsbilde
+-	Venstresiden: Bilde av karakter og personalia
+→ Transisjon av karakter bilde til 
+-	Høyresiden: Tre “boble” med bilder som representerer drømmen din.
+→ Flipp animasjon med informasjon når boblen flipper rundt.
+
+
+
