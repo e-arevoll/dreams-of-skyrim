@@ -4,7 +4,7 @@ A simple static website created as a group project during our first year at Kris
 
 ## How to open the project
 **1. Download or clone the Repository**
-- Click the green **Code* button and choose "Download ZIP"
+- Click the green *Code* button and choose "Download ZIP"
 - Clone using Git: ```git clone https://github.com/e-arevoll/dreams-of-skyrim.git ```
 
 **2. Open the project**
